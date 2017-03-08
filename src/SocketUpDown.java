@@ -4,6 +4,11 @@
 class SocketUpDown {
     public static void main(String[] args) {
         CheckSocket ccc = new CheckSocket();
-        ccc.isPort("google.com", 65536);
+        try {
+            boolean check = CheckSocket.isPort(args[0], Integer.parseInt(args[1]));
+        } catch (Exception ex) {
+            System.out.println("Please put the desired input");
+        }
+
     }
 }
