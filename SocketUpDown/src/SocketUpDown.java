@@ -3,7 +3,7 @@
  */
 class SocketUpDown {
     public static void main(String[] args) {
-        CheckSocket ccc = new CheckSocket();
+        
         try {
             boolean check = CheckSocket.isPort(args[0], Integer.parseInt(args[1]));
         } catch (Exception ex) {
